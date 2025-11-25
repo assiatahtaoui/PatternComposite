@@ -31,15 +31,23 @@ Implémente print() pour afficher son nom
 Contient une collection de Component
 
 Peut contenir des File et d’autres Folder
-🚀 Exemple d’utilisation – Classe Test.java
+
+Gère la construction de l'arborescence
+
+Exemple d’utilisation – Test.java
+
+Voici le code exact que tu as fourni, présenté proprement :
 
 public class Test {
     public static void main(String[] args) {
-        Folder folder=new Folder("/");
+
+        Folder folder = new Folder("/");
+
         folder.addChild(new File("java"));
         folder.addChild(new File("xml"));
-        Folder entities=(Folder) folder.addChild(new Folder("entitites"));
-        folder.print();
-Implémente add(), remove() et show()
 
-Gère la construction de l'arborescence
+        Folder entities = (Folder) folder.addChild(new Folder("entitites"));
+
+        folder.print();
+    }
+}
